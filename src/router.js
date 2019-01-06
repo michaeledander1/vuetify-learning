@@ -1,6 +1,16 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 import Home from './views/Home.vue'
+import Africa from './views/Africa.vue'
+import About from './views/About.vue'
+import Asia from './views/Asia.vue'
+import Europe from './views/Europe.vue'
+import NorthAmerica from './views/NorthAmerica.vue'
+import SouthAmerica from './views/SouthAmerica.vue'
+import Oceania from './views/Oceania.vue'
+import Mixed from './views/Mixed.vue'
+import Natural from './views/Natural.vue'
+import Cultural from './views/Cultural.vue'
 
 Vue.use(Router)
 
@@ -16,10 +26,52 @@ export default new Router({
     {
       path: '/about',
       name: 'about',
-      // route level code-splitting
-      // this generates a separate chunk (about.[hash].js) for this route
-      // which is lazy-loaded when the route is visited.
-      component: () => import(/* webpackChunkName: "about" */ './views/About.vue')
+      component: About
+    },
+    {
+      path: '/africa',
+      name: 'africa',
+      component: Africa
+    },
+    {
+      path: '/asia',
+      name: 'asia',
+      component: Asia
+    },
+    {
+      path: '/europe',
+      name: 'europe',
+      component: Europe
+    },
+    {
+      path: '/north-america',
+      name: 'north-america',
+      component: NorthAmerica
+    },
+    {
+      path: '/south-america',
+      name: 'south-america',
+      component: SouthAmerica
+    },
+    {
+      path: '/australia-oceania',
+      name: 'australia-oceania',
+      component: Oceania
+    },
+    {
+      path: '/mixed',
+      name: 'mixed',
+      component: Mixed
+    },
+    {
+      path: '/cultural',
+      name: 'cultural',
+      component: Cultural
+    },
+    {
+      path: '/natural',
+      name: 'natural',
+      component: Natural
     }
   ]
 })
